@@ -1,0 +1,20 @@
+body {
+  min-height: 120rem;
+}
+
+body.dark {
+  --bg-color: #000;
+  --bg-secondary-color: #131316;
+  --font-color: #f5f5f5;
+  --color-grey: #ccc;
+  --color-darkGrey: #777;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+#text4 {
+  width: 60rem;
+}
+/*# sourceMappingURL=styles.css.map */
