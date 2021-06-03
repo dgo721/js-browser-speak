@@ -1,4 +1,5 @@
-let buttons = document.querySelectorAll(".card .button");
+let speakButtons = document.querySelectorAll(".card .js-btn--speak");
+let stopButtons = document.querySelectorAll(".card .js-btn--stop");
 
 const chooseLang = (lang) => {
   let language;
@@ -21,6 +22,7 @@ const chooseLang = (lang) => {
 };
 
 const speak = async (val) => {
+	if (speechSynthesis.speaking) return;
   let text = document.querySelector("#text" + val).innerText;
   text = text === "" ? document.querySelector("#text" + val).alt : text;
   const message = new SpeechSynthesisUtterance(text);
@@ -29,10 +31,18 @@ const speak = async (val) => {
   speechSynthesis.speak(message);
 };
 
-for (var i = 0; i < buttons.length; i++) {
-  let button = buttons[i];
+for (var i = 0; i < speakButtons.length; i++) {
+  let button = speakButtons[i];
   button.addEventListener("click", function (e) {
     e.preventDefault();
     speak(this.value);
+  });
+}
+
+for (var i = 0; i < stopButtons.length; i++) {
+  let button = stopButtons[i];
+  button.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (speechSynthesis.speaking) speechSynthesis.cancel();
   });
 }

@@ -15,21 +15,23 @@
 		<h1>Speech Synthesis API</h1>
 		<p>This as experimental sample. Tested on <span class="text-primary">Google Chrome</span> browser. Use Google
 			Translate to listen in <span class="text-grey">english, spanish or french</span>.</p>
-		<p>To view the complete list of languages, <a href="./languages">click here</a>.</p>
+		<p>To view the complete list of languages, <a href="/languages.html">click here</a>.</p>
 		<section>
 			<div class="card">
 				<p id="text1">Don't forget to tell these special people in your life just how special they are to you. There's
 					nothing wrong with having a tree as a friend. In this world, everything can be happy. Isn't that fantastic?
 				</p>
 				<div class="is-right">
-					<button class="button primary" value="1">Speak</button>
+					<button class="button primary js-btn--speak" value="1">Speak</button>
+					<button class="button error js-btn--stop">Stop</button>
 				</div>
 			</div>
 			<div class="card">
 				<p id="text2">No, my father didn't fight in the wars. He was a navigator on a spice freighter. That's what your uncle
 					told you. He didn't hold with your father's ideals. Thought he should have stayed here and not gotten involved.</p>
 				<div class="is-right">
-					<button class="button primary" value="2">Speak</button>
+					<button class="button primary js-btn--speak" value="2">Speak</button>
+					<button class="button error js-btn--stop">Stop</button>
 				</div>
 			</div>
 			<div class="card">
@@ -37,21 +39,23 @@
 					have time to build it to scale or to paint it. Okay, alright, Saturday is good, Saturday's good, I could spend
 					a week in 1955.</p>
 				<div class="is-right">
-					<button class="button primary" value="3">Speak</button>
+					<button class="button primary js-btn--speak" value="3">Speak</button>
+					<button class="button error js-btn--stop">Stop</button>
 				</div>
 			</div>
 			<div class="card">
 				<img id="text4"
 					src="https://ik.imagekit.io/twXXIcb17/sounders_centurylink_heaven_DPPs00DQY.jpg?tr=w-1200,h-675,fo-auto"
-					alt="Voice can also read image alt attributes. This is a photo of Lumen Field." />
+					alt="Voice can also read image alt attributes. This is a photo of Lumen Field in Seattle. Seahawks and Sounders play here." />
 				<div class="is-right">
-					<button class="button primary" value="4">Speak</button>
+					<button class="button primary js-btn--speak" value="4">Speak</button>
+					<button class="button error js-btn--stop">Stop</button>
 				</div>
 			</div>
 		</section>
 	</main>
 
-	<script src="./js/script.js"></script>
+	<script src="./js/script.js" defer></script>
 </body>
 
 </html>
