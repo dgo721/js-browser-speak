@@ -6,13 +6,16 @@ const chooseLang = (lang) => {
 
   switch (lang) {
     case "en":
-      language = "en-US";
+      language = "en-GB";
       break;
     case "es":
       language = "es-US";
       break;
     case "fr":
       language = "fr-FR";
+      break;
+    case "ja":
+      language = "ja-JP";
       break;
     default:
       language = "en-US";
